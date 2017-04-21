@@ -7,9 +7,13 @@ Download the project and add the IAImagePicker file to your Project
 
 
 let imagePicker = IAImagePicker.sharedInstance
+
 imagePicker.allowEditing = false
+
 imagePicker.delegate = self
+
 imagePicker.presentIAImagePickerController(fromViewController: self)
+
 
 # Delegate
 
