@@ -8,23 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController , IAImagePickerDelegate{
-
-    @IBOutlet weak var profileImage: UIImageView!
+class ViewControler:UIViewController , IAImagePickerDelegate1{
+    
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.profileImage.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(handleTap(tap:))))
-    }
-
-    func handleTap(tap:UITapGestureRecognizer)  {
-        let imagePicker = IAImagePicker.sharedInstance
-        imagePicker.allowEditing = false
-        imagePicker.delegate = self
-        imagePicker.presentIAImagePickerController(fromViewController: self)
-    }
-    func didfinishPickingMediaInfo(mediaInfo: [String : Any], pickedImage: UIImage?) {
-        profileImage.image = pickedImage
+        imageView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(handleTap(tap:))))
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    func handleTap(tap:UITapGestureRecognizer) {
+        let imagePicker = IAImagePickerViewController()
+        imagePicker.delegate = self
+        DispatchQueue.main.async {
+          self.present(imagePicker, animated: false, completion: nil)
+        }
+    }
+    
+    func didFinishPickingMediaInfo(mediaInfo: [String : Any]?, pickedImage: UIImage?) {
+        if let image = pickedImage{
+            self.imageView.image = image
+        }
+    }
 }
+
+
 

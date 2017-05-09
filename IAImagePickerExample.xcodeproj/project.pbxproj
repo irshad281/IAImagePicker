@@ -14,6 +14,7 @@
 		5618052F1EAA132F004B5DE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5618052D1EAA132F004B5DE8 /* LaunchScreen.storyboard */; };
 		5618053A1EAA132F004B5DE8 /* IAImagePickerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561805391EAA132F004B5DE8 /* IAImagePickerExampleTests.swift */; };
 		561805461EAA13A5004B5DE8 /* IAImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561805451EAA13A5004B5DE8 /* IAImagePicker.swift */; };
+		56D091AC1EB09D0E00A5E405 /* IAImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D091AB1EB09D0E00A5E405 /* IAImagePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		561805391EAA132F004B5DE8 /* IAImagePickerExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAImagePickerExampleTests.swift; sourceTree = "<group>"; };
 		5618053B1EAA132F004B5DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		561805451EAA13A5004B5DE8 /* IAImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAImagePicker.swift; sourceTree = "<group>"; };
+		56D091AB1EB09D0E00A5E405 /* IAImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAImagePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				561805441EAA136C004B5DE8 /* IAImagePicker */,
 				561805241EAA132F004B5DE8 /* AppDelegate.swift */,
 				561805261EAA132F004B5DE8 /* ViewController.swift */,
+				56D091AB1EB09D0E00A5E405 /* IAImagePickerViewController.swift */,
 				561805281EAA132F004B5DE8 /* Main.storyboard */,
 				5618052B1EAA132F004B5DE8 /* Assets.xcassets */,
 				5618052D1EAA132F004B5DE8 /* LaunchScreen.storyboard */,
@@ -214,6 +217,7 @@
 			files = (
 				561805271EAA132F004B5DE8 /* ViewController.swift in Sources */,
 				561805251EAA132F004B5DE8 /* AppDelegate.swift in Sources */,
+				56D091AC1EB09D0E00A5E405 /* IAImagePickerViewController.swift in Sources */,
 				561805461EAA13A5004B5DE8 /* IAImagePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
