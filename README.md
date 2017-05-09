@@ -3,7 +3,13 @@
 A very Simple Image Picker that handles All the permissions of user like denied , allowed , restricted
 
 # HOW TO USE?
-Download the project and add the IAImagePicker file to your Project
+Download the project and add the IAImagePickerViewController file to your Project
+
+let imagePicker = IAImagePickerViewController.sharedInstance
+
+imagePicker.delegate = self
+
+imagePicker.presentIAImagePickerController(fromViewController: self)
 
 
 ![alt text](http://i.imgur.com/akHbNiV.png)
@@ -16,18 +22,8 @@ Download the project and add the IAImagePicker file to your Project
 
 ![alt text](http://i.imgur.com/kq20SQp.png)
 
-let imagePicker = IAImagePicker.sharedInstance
 
-imagePicker.allowEditing = false
-
-imagePicker.delegate = self
-
-imagePicker.presentIAImagePickerController(fromViewController: self)
-
-
-# Delegate
-
-IAImagePickerdelegate
+# IAImagePickerdelegate
 
 when user select the image this function will be called mediaInfo contain image url ,  edited image and other information
 
