@@ -6,6 +6,16 @@ A very Simple Image Picker that handles All the permissions of user like denied 
 Download the project and add the IAImagePicker file to your Project
 
 
+![alt text](http://i.imgur.com/akHbNiV.png)
+
+![alt text](http://i.imgur.com/tydDw9B.png)
+
+![alt text](http://i.imgur.com/46H9Xv0.png)
+
+![alt text](http://i.imgur.com/wFxO5zb.png)
+
+![alt text](http://i.imgur.com/kq20SQp.png)
+
 let imagePicker = IAImagePicker.sharedInstance
 
 imagePicker.allowEditing = false
