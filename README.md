@@ -22,13 +22,18 @@ imagePicker.presentIAImagePickerController(fromViewController: self)
 
 ![alt text](http://i.imgur.com/46H9Xv0.png)
 
+
 # Gallary
+
 
 ![alt text](http://i.imgur.com/wFxO5zb.png)
 
+
 # when user dont allow access to camera or Photo Library
 
+
 ![alt text](http://i.imgur.com/kq20SQp.png)
+
 
 
 # IAImagePickerdelegate
